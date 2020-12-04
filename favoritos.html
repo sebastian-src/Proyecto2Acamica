@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/gifos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>GIFOS SCM</title>
+</head>
+<body id ="cuerpo">
+      <!-- header start here -->
+      <div class="linea_azul_header"></div>
+      
+      <header>
+
+          <figure class="logo1"> <a href="./index.html"> <img src="./assets/logo-mobile.svg" alt="Imagotipo proyecto numero 2 acamica GIFOS"> </a> </figure>
+          <figure class="logo2"> <a href="./index.html"> <img src="./assets/logo-desktop.svg" alt="Imagotipo proyecto numero 2 acamica GIFOS"> </a> </figure>
+  
+          <nav class="navbar">
+              
+              <input type="checkbox" name="#" id="#">
+              
+              <span></span>
+              <span></span>
+              <span></span>
+  
+              <div class="circulo_cruz">
+  
+                  <ul>
+                      <li id="dark_mode"> <a href=""> Modo Nocturno </a> <br > <hr class="linea"> </hr> </li>
+                      <li> <a href=""> Favoritos </a> <br > <hr class="linea"> </hr> </li>
+                      <li> <a href="./mis_gifos.html"> Mis GIFOS </a> <br > <hr class="linea"> </hr> </li>
+                  </ul>
+  
+                  <div class="cruz"><a href="./crear_gifo.html"> <img src="./assets/button-crear-gifo.svg" alt=""> </a></div>
+  
+              </div>
+  
+          </nav>
+          
+      </header>
+      <!-- header finish here -->
+
+      <!-- ---------------Sección Favoritos--------------------------- -->
+
+      <!-- main start here -->
+  
+      <main>
+          <div class="contenedor_favoritos">
+              <figure>
+                  <img src="./assets/icon-favoritos.svg" alt="">
+              </figure>
+              <h2>Favoritos</h2>
+          </div>
+
+          <div id="conte_favoritos2" class="contenedor_favoritos2">
+              <img src="./assets/icon-fav-sin-contenido.svg" alt="">
+              <p>"¡Guarda tu primer GIFO en Favoritos <br>
+                para que se muestre aquí!"</p>
+          </div>
+
+          <div id="imagenes_favoritos" class="contenedor_imagenes_favoritos">
+              <!-- aca deberia ir los gifs cuyo evento click probiene del corazon morado -->
+          </div>
+          
+
+          <!-- Boton ver mas -->
+          <div class="boton_ver_mas">
+            <input type="button" value="Ver más" onclick="">
+          </div>
+           <!-- sección 3 -->
+           <section class="seccion3">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos <br> GIFOS de nuestra comunidad.</p>
+            <div class="list_gifos">
+                <div id="left_arrow_id" class="left_arrow">
+                    <img src="./assets/button-slider-left.svg" alt="">
+                </div>
+
+                <div id="contenedor_carrusel" class="contenedor_carrusel">
+
+                </div>
+               
+                <div id="rigth_arrow_id" class="rigth_arrow">
+                    <img src="./assets/Button-Slider-right-hover.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <span class="close">&times;</span>
+
+            <img class="modal-content" id="img01" src="">
+
+            <div id="options">
+
+                <div class="usuario">
+
+                    <div>
+                        <h2 id="titulo_gifo">Título GIFO</h2>
+                        <h3 id="gifo_usuario">User</h3>
+                    </div>
+                   
+                </div>
+
+                <div class="iconos_favoritos_descargar">
+
+                    <i action = "favoritos.html" id="corazon2" class="corazon">
+                        <img  src="./assets/icon-fav-active.svg" alt="">
+                    </i>
+
+                    <button class="borde_boton_descarga">
+                        <img src="./assets/icon-download.svg" alt="">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+      </main>
+
+      <!-- main finish here -->
+
+      
+
+        <!-- footer start here -->
+    
+        <footer class="pie_de_pagina">
+
+
+            <div class="social">
+    
+                <h4 id="compartir_enid" class="compartir_en">Compartir en :</h4>
+    
+                <div class="contenedor_social">
+    
+                    <div class="icon">
+                        <a href="https://www.facebook.com/"> <img src="./assets/icon_facebook.svg" alt="icono facebook"> </a>
+                    </div>
+        
+                    <div class="icon">
+                        <a href="https://twitter.com"> <img src="./assets/icon-twitter.svg" alt="icono twitter"> </a>
+                    </div>
+        
+                    <div class="icon">
+                        <a href="https://www.instagram.com/"> <img src="./assets/icon_instagram.svg" alt="icono instagram"> </a> 
+                    </div>
+    
+                </div>
+    
+                
+                
+            </div>
+            
+            <p id="rightsid" class="rights">© GIFOS 2020 All Rights Reserved.</p>
+            
+        </footer>
+
+        <!-- footer finish here -->
+
+        <div class="linea_azul_footer"></div>
+        <script src="./js/gifos_nocturno.js"></script>
+        <script src="./js/Trending.js"></script>
+        <script src="./js/traer_gifos_local_storage.js"></script>
+        
+    </body>
+
+    
+</html>
