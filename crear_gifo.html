@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifOS - Crear Gifos</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</head>
+
+<body class="">
+
+
+    <header>
+        <div id="headMobile">
+            <a id="logo" href="./index.html"><img src="./assets/logo-desktop.svg" alt="logo gifOS"></a>
+            <label id="menuMobile">
+                <input onclick="hamburgerMenu()" type="checkbox" />
+                <img src="./assets/burger.svg" alt="icon menu">
+            </label>
+        </div>
+        <div>
+            <nav id="ppalNav" class="">
+                <ul>
+                    <li>
+                        <a id="modeView" onclick="modeToggle()" href="#">MODO NOCTURNO</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="./favoritos.html">FAVORITOS</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="./mis_gifos.html">MIS GIFOS</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </nav>
+            <a class="a"  id="createGifo" href="./crear_gifo.html"><img src="./assets/button-crear-gifo.svg"
+                    alt="icon plus"></a>
+        </div>
+    </header>
+
+
+    <!-- main start here -->
+
+    <main>
+        <section id="createGifos">
+
+            <div id="recorderContent">
+
+                <div id="cameraIlustration">
+
+                    <img src="./assets/camara.svg" alt="" id="camera">
+                    <img src="./assets/element-luz-camara.svg" alt="" id="cameraLight">
+                </div>
+
+                <div id="recordingDiv">
+
+                  
+                    <div id="cameraDiv"> 
+
+                        <div class="videoDiv">
+
+                            <h2 id="instructionTitle">Aquí podrás
+                                <br>crear tus propios <span>GIFOS</span>
+                            </h2>
+
+                            <p id="instructionDetail">¡Crea tu GIFO en sólo 3 pasos!<br>
+                                (sólo necesitas una cámara para grabar un video)
+                            </p>
+                            
+                            <video id="recordingVideo" class="nonvisible"></video>   
+
+                            <div class="nonvisible" id="uploadingGif">
+                                <div class="download_and_copy"><img src="./assets/icon-download.svg" alt="icono descarga"></div>
+                                <img src="./assets/loader.svg" alt="" id="iconStateUpload">
+                                <p id="textStateUpload">Estamos subiendo tu GIFO</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="stepsDiv">
+
+                        <div class="steps">
+                            <span id="one" class="stepNumber">1</span>
+                            <span id="two" class="stepNumber">2</span>
+                            <span id="three" class="stepNumber">3</span>
+                        </div>
+
+                        <div id="optionsRecording">
+                            <p id="counter" class="nonvisible">0:00:00</p>
+                            <button id="repeatRecording" class="nonvisible">REPETIR CAPTURA</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="movieIlustration">
+                    <img src="./assets/pelicula.svg" alt="">
+                </div>
+
+            </div>
+
+            <hr>
+            <button class="btnLarge" id="actionBtn">COMENZAR</button>
+        </section>
+
+    </main>
+    
+    <footer>
+
+        <div id="compartir">
+
+            <span>Compartir en:</span>
+            
+            <img class="socialNetwork" src="./assets/icon_facebook.svg" alt="icon facebook">
+            <img class="socialNetwork" src="./assets/icon-twitter.svg" alt="icon twitter">
+            <img class="socialNetwork" src="./assets/icon_instagram.svg" alt="icon instagram">
+
+        </div>
+
+        <span id="rights">@GIFOS 2020 All Rights Reserved</span>
+
+    </footer>
+    
+    <script src="./js/crear_gifo.js"></script>
+    <script src="./js/traer_gifos_local_storage.js"></script>
+    <script src="./js/trending.js"></script>
+</body>
+
+</html>
